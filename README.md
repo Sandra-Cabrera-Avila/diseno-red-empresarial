@@ -43,10 +43,10 @@ El router proporciona el enrutamiento entre las VLAN mediante subinterfaces. Se 
 
 Se realizaron pruebas de conectividad y verificación de la red en Cisco Packet Tracer:
 
-- *Desarrollo → servidor:* se recibieron 3 de 4 respuestas, con una pérdida del 25 %.
-- *Invitados → servidor:* no se recibieron respuestas (0 de 4 paquetes), con una pérdida del 100 % y mensajes de destino inalcanzable desde 192.168.60.1.
-- *VLAN y enlace troncal:* se recopilaron evidencias de los comandos de verificación de Cisco IOS.
-- *Conectividad inalámbrica:* se prepararon evidencias de los equipos de Gerencia e Invitados.
+- **Desarrollo → servidor:** se recibieron 3 de 4 respuestas, con una pérdida del 25 %.
+- **Invitados → servidor:** no se recibieron respuestas (0 de 4 paquetes), con una pérdida del 100 % y mensajes de destino inalcanzable desde 192.168.60.1.
+- **VLAN y enlace troncal:** se recopilaron evidencias de los comandos de verificación de Cisco IOS.
+- **Conectividad inalámbrica:** se prepararon evidencias de los equipos de Gerencia e Invitados.
 
 Los resultados corresponden a las pruebas documentadas. El bloqueo por ACL debe confirmarse mediante la revisión de su configuración y aplicación.
 
