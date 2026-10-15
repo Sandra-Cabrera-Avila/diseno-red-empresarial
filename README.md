@@ -41,24 +41,22 @@ El router proporciona el enrutamiento entre las VLAN mediante subinterfaces. Se 
 
 ## 5. Pruebas realizadas
 
-Durante la simulación se realizaron pruebas de conectividad con los siguientes resultados:
+Se realizaron pruebas de conectividad y verificación de la red en Cisco Packet Tracer:
 
-- Comunicación entre un equipo de Desarrollo y su puerta de enlace.
-- Comunicación entre Desarrollo y el servidor.
-- Comunicación entre Administración y la impresora.
-- Conectividad inalámbrica de los equipos de Gerencia con su puerta de enlace.
-- Conectividad de la red de Invitados con su puerta de enlace.
-- Bloqueo de la comunicación desde Invitados hacia el servidor mediante la ACL.
+- *Desarrollo → servidor:* se recibieron 3 de 4 respuestas, con una pérdida del 25 %.
+- *Invitados → servidor:* no se recibieron respuestas (0 de 4 paquetes), con una pérdida del 100 % y mensajes de destino inalcanzable desde 192.168.60.1.
+- *VLAN y enlace troncal:* se recopilaron evidencias de los comandos de verificación de Cisco IOS.
+- *Conectividad inalámbrica:* se prepararon evidencias de los equipos de Gerencia e Invitados.
 
-Las pruebas realizadas confirmaron la conectividad de los destinos permitidos y el bloqueo de la comunicación de invitados hacia las redes internas comprobadas.
+Los resultados corresponden a las pruebas documentadas. El bloqueo por ACL debe confirmarse mediante la revisión de su configuración y aplicación.
 
 ## 6. Estructura del repositorio
 
-- `README.md`: presentación general del proyecto.
-- `docs/`: documentación de la arquitectura y del direccionamiento IP.
-- `simulacion/`: archivo de Cisco Packet Tracer.
-- `diagramas/`: diagrama de la topología de red.
-- `evidencias/`: capturas de pantalla de la configuración y de las pruebas.
+- `README.md`: descripción general, objetivos y alcance del proyecto.
+- `Simulacion/`: archivo del proyecto de Cisco Packet Tracer.
+- `Evidencias/`: capturas de las pruebas de conectividad, el bloqueo observado desde Invitados, la conexión Wi-Fi de Gerencia y la topología.
+- `Diagramas/`: diagrama completo de la topología de red.
+- `Informe/`: informe técnico del proyecto en Word y PDF.
 
 ## 7. Alcance y limitaciones
 
